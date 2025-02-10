@@ -5,10 +5,10 @@ public class Car {
     private Driver driver;
     private Engine engine;
 
-    public Car(String model, Driver driver, Enginer engine) {
+    public Car(String model, Driver driver, Engine engine) {
         this.model = model;
         this.driver = driver;
-        this.enginer = engine;
+        this.engine = engine;
     }
 
     public Car copy(boolean deepCopy) {
