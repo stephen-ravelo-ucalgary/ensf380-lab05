@@ -13,9 +13,9 @@ public class Car {
 
     public Car copy(boolean deepCopy) {
         if (deepCopy) {
-            Car copy = (Car) super.clone();
-            copy.driver = (Driver) driver.clone();
-            copy.engine = (Engine) engine.clone();
+            Driver driverCopy = new Driver(driver);
+            Engine engineCopy = new Engine(engine);
+            Car copy = new Car(model, driverCopy, engineCopy);
             return copy;
         } else {
             return this;
